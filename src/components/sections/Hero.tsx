@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, X } from "lucide-react";
 import heroCampus from "@/assets/hero-campus.jpg";
 
 const Hero = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -45,7 +49,7 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="xl" className="flex items-center gap-2">
+            <Button variant="heroOutline" size="xl" className="flex items-center gap-2" onClick={() => setShowVideo(true)}>
               <Play className="w-5 h-5" />
               Watch Our Story
             </Button>
@@ -75,6 +79,28 @@ const Hero = () => {
         </div>
       </div>
     </section>
+
+    {/* Video Modal */}
+    {showVideo && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/80 backdrop-blur-sm" onClick={() => setShowVideo(false)}>
+        <div className="relative w-full max-w-4xl mx-4 aspect-video bg-foreground rounded-2xl overflow-hidden" onClick={e => e.stopPropagation()}>
+          <button
+            onClick={() => setShowVideo(false)}
+            className="absolute -top-10 right-0 text-primary-foreground hover:text-accent transition-colors z-10"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <div className="w-full h-full flex items-center justify-center text-primary-foreground">
+            <div className="text-center p-8">
+              <Play className="w-16 h-16 mx-auto mb-4 opacity-50" />
+              <p className="text-xl font-heading font-bold mb-2">Coming Soon</p>
+              <p className="text-primary-foreground/70">Our story video will be available shortly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+    </>
   );
 };
 
