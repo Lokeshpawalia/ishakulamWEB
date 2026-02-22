@@ -2,11 +2,15 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 import heroCampus from "@/assets/hero-campus.jpg";
 import sportsImg from "@/assets/sports.jpg";
 
 const images = [
   { src: heroCampus, alt: "Campus View", span: "col-span-2 row-span-2" },
+  { src: gallery5, alt: "Ishakulam Gurukul Brochure", span: "" },
+  { src: gallery6, alt: "Ishakulam Campus Building", span: "" },
   { src: gallery1, alt: "Cultural Festival", span: "" },
   { src: gallery2, alt: "Science Exhibition", span: "" },
   { src: gallery3, alt: "Yoga Session", span: "col-span-2" },
