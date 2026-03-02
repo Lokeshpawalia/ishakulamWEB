@@ -79,7 +79,7 @@ const Contact = () => {
           {/* Google Maps Embed */}
           <div className="rounded-2xl overflow-hidden shadow-card h-64">
             <iframe
-              src="https://www.google.com/maps?q=Ishakulam+Gurukul,+Jiwana+Guliyan,+Baraut,+Bagpat&output=embed"
+              src="https://www.google.com/maps?q=29.099598,77.382678&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
