@@ -38,7 +38,7 @@ const Principal = () => {
               <div className="p-6 text-center">
                 <h3 className="font-heading text-2xl font-bold text-foreground">Dr. Manish Solanki</h3>
                 <p className="text-primary font-medium mt-1 text-lg">Founder</p>
-                <p className="text-sm text-muted-foreground mt-2">PhD in Yogic Science at GVK</p>
+                <p className="text-sm text-muted-foreground mt-2">PhD in Yogic Science at Gurukul Kangri University</p>
               </div>
             </div>
 
