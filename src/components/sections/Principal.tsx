@@ -1,5 +1,6 @@
 import { Quote } from "lucide-react";
-import principalImg from "@/assets/principal.jpg";
+import founderImg from "@/assets/founder.jpg";
+import cofounderImg from "@/assets/cofounder.jpg";
 
 const Principal = () => {
   return (
@@ -22,32 +23,32 @@ const Principal = () => {
             </p>
           </div>
 
-          {/* Founders Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Founder */}
-            <div className="bg-card rounded-3xl shadow-elevated overflow-hidden">
+          {/* Founders Grid - Manish bigger */}
+          <div className="grid md:grid-cols-5 gap-8 items-start">
+            {/* Founder - larger */}
+            <div className="md:col-span-3 bg-card rounded-3xl shadow-elevated overflow-hidden">
               <div className="relative">
                 <img
-                  src={principalImg}
+                  src={founderImg}
                   alt="Dr. Manish Solanki - Founder"
-                  className="w-full h-72 object-cover"
+                  className="w-full h-80 md:h-96 object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
               </div>
               <div className="p-6 text-center">
-                <h3 className="font-heading text-xl font-bold text-foreground">Dr. Manish Solanki</h3>
-                <p className="text-primary font-medium mt-1">Founder</p>
+                <h3 className="font-heading text-2xl font-bold text-foreground">Dr. Manish Solanki</h3>
+                <p className="text-primary font-medium mt-1 text-lg">Founder</p>
                 <p className="text-sm text-muted-foreground mt-2">PhD in Yogic Science at GVK</p>
               </div>
             </div>
 
-            {/* Co-Founder */}
-            <div className="bg-card rounded-3xl shadow-elevated overflow-hidden">
+            {/* Co-Founder - smaller */}
+            <div className="md:col-span-2 bg-card rounded-3xl shadow-elevated overflow-hidden">
               <div className="relative">
                 <img
-                  src={principalImg}
+                  src={cofounderImg}
                   alt="Acharya Shubham - Co-Founder"
-                  className="w-full h-72 object-cover"
+                  className="w-full h-72 object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
               </div>
