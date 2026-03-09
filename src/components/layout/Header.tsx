@@ -6,19 +6,31 @@ import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Academics", path: "/academics" },
-  { name: "Sports", path: "/sports" },
+  { name: "About", path: "/#about" },
+  { name: "Academics", path: "/#academics" },
+  { name: "Sports", path: "/#sports" },
   { name: "Hostel", path: "/hostel" },
-  { name: "Gaushala", path: "/gaushala" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "Fees", path: "/fees" },
-  { name: "Contact", path: "/contact" },
+  { name: "Gaushala", path: "/#gaushala" },
+  { name: "Gallery", path: "/#gallery" },
   { name: "Admissions", path: "/admissions" },
+  { name: "Contact", path: "/#contact" },
 ];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  const scrollToSection = (hash: string) => {
+    if (location.pathname !== "/") {
+      window.location.href = hash;
+      return;
+    }
+    const element = document.querySelector(hash.replace("/#", "#"));
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -56,17 +68,17 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link
+              <button
                 key={link.name}
-                to={link.path}
-                className={`text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "text-primary"
-                    : "text-foreground hover:text-primary"
-                }`}
+                onClick={() => link.path.includes("#") ? scrollToSection(link.path) : null}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
-                {link.name}
-              </Link>
+                {link.path.includes("#") ? (
+                  link.name
+                ) : (
+                  <Link to={link.path}>{link.name}</Link>
+                )}
+              </button>
             ))}
             <Button variant="hero" size="sm" asChild>
               <Link to="/admissions">Apply Now</Link>
@@ -88,18 +100,17 @@ const Header = () => {
           <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-slide-up">
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
-                <Link
+                <button
                   key={link.name}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`text-left text-sm font-medium transition-colors py-2 ${
-                    location.pathname === link.path
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  }`}
+                  onClick={() => link.path.includes("#") ? scrollToSection(link.path) : setIsOpen(false)}
+                  className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
                 >
-                  {link.name}
-                </Link>
+                  {link.path.includes("#") ? (
+                    link.name
+                  ) : (
+                    <Link to={link.path}>{link.name}</Link>
+                  )}
+                </button>
               ))}
               <Button variant="hero" size="sm" className="mt-2" asChild>
                 <Link to="/admissions">Apply Now</Link>
