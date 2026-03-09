@@ -1,19 +1,17 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import About from "@/components/sections/About";
-import Principal from "@/components/sections/Principal";
+import Contact from "@/components/sections/Contact";
 
-const Index = () => {
+const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32">
-        <About />
-        <Principal />
+        <Contact />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default ContactPage;

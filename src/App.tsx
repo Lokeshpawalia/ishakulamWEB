@@ -7,6 +7,12 @@ import Index from "./pages/Index";
 import Hostel from "./pages/Hostel";
 import Admissions from "./pages/Admissions";
 import ApplicationForm from "./pages/ApplicationForm";
+import AcademicsPage from "./pages/AcademicsPage";
+import SportsPage from "./pages/SportsPage";
+import GaushalaPage from "./pages/GaushalaPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
+import FeesPage from "./pages/FeesPage";
 import NotFound from "./pages/NotFound";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -21,7 +27,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/academics" element={<AcademicsPage />} />
+          <Route path="/sports" element={<SportsPage />} />
           <Route path="/hostel" element={<Hostel />} />
+          <Route path="/gaushala" element={<GaushalaPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/fees" element={<FeesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/application-form" element={<ApplicationForm />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

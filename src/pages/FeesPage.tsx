@@ -1,19 +1,17 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import About from "@/components/sections/About";
-import Principal from "@/components/sections/Principal";
+import Fees from "@/components/sections/Fees";
 
-const Index = () => {
+const FeesPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32">
-        <About />
-        <Principal />
+        <Fees />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default FeesPage;
