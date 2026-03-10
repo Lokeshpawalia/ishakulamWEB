@@ -64,10 +64,9 @@ const Gaushala = () => {
             </div>
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-secondary text-secondary-foreground rounded-xl p-4 shadow-elevated hidden md:block">
+            <div className="absolute -bottom-6 -right-6 bg-secondary text-secondary-foreground rounded-xl p-4 shadow-elevated hidden lg:block">
               <Leaf className="w-8 h-8 mb-2" />
-              <div className="font-heading text-xl font-bold">100% Organic</div>
-              <div className="text-sm opacity-90">Farm to Table</div>
+              <div className="font-heading text-xl font-bold">Gaushala</div>
             </div>
           </div>
         </div>

@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { CreditCard, Building, Smartphone, FileText, CheckCircle } from "lucide-react";
 
 const feeStructure = [
-  { class: "Class V – VII", tuition: "₹60,000", hostel: "₹80,000", total: "₹1,40,000" },
-  { class: "Class VIII – IX", tuition: "₹70,000", hostel: "₹80,000", total: "₹1,50,000" },
+  { class: "V – VII", tuition: "₹60,000", hostel: "₹80,000", total: "₹1,40,000" },
+  { class: "VIII – IX", tuition: "₹70,000", hostel: "₹80,000", total: "₹1,50,000" },
 ];
 
 const installmentPlan = [
-  { class: "Class V – VII", april: "₹50,000", august: "₹50,000", december: "₹50,000", total: "₹1,50,000" },
-  { class: "Class VIII – IX", april: "₹53,333", august: "₹53,333", december: "₹53,333", total: "₹1,60,000" },
+  { class: "V – VII", april: "₹50,000", august: "₹50,000", december: "₹50,000", total: "₹1,50,000" },
+  { class: "VIII – IX", april: "₹53,333", august: "₹53,333", december: "₹53,333", total: "₹1,60,000" },
 ];
 
 const paymentMethods = [
@@ -59,22 +59,22 @@ const Fees = () => {
               </div>
               
               <div className="overflow-x-auto">
-                <table className="w-full">
+                <table className="w-full text-sm md:text-base">
                   <thead className="bg-muted">
                     <tr>
-                      <th className="text-left p-4 font-semibold text-foreground">Class</th>
-                      <th className="text-left p-4 font-semibold text-foreground">Tuition Fee</th>
-                      <th className="text-left p-4 font-semibold text-foreground">Hostel Fee</th>
-                      <th className="text-left p-4 font-semibold text-foreground">Total</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Class</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Tuition</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Hostel</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Total</th>
                     </tr>
                   </thead>
                   <tbody>
                     {feeStructure.map((item, index) => (
                       <tr key={index} className="border-b border-border last:border-0">
-                        <td className="p-4 text-foreground font-medium">{item.class}</td>
-                        <td className="p-4 text-foreground">{item.tuition}</td>
-                        <td className="p-4 text-foreground">{item.hostel}</td>
-                        <td className="p-4 text-foreground font-bold">{item.total}</td>
+                        <td className="p-3 md:p-4 text-foreground font-medium">{item.class}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.tuition}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.hostel}</td>
+                        <td className="p-3 md:p-4 text-foreground font-bold">{item.total}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -97,24 +97,24 @@ const Fees = () => {
               </div>
               
               <div className="overflow-x-auto">
-                <table className="w-full">
+                <table className="w-full text-sm md:text-base">
                   <thead className="bg-muted">
                     <tr>
-                      <th className="text-left p-4 font-semibold text-foreground">Class</th>
-                      <th className="text-left p-4 font-semibold text-foreground">April</th>
-                      <th className="text-left p-4 font-semibold text-foreground">August</th>
-                      <th className="text-left p-4 font-semibold text-foreground">December</th>
-                      <th className="text-left p-4 font-semibold text-foreground">Total/Year</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Class</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Apr</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Aug</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Dec</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Total</th>
                     </tr>
                   </thead>
                   <tbody>
                     {installmentPlan.map((item, index) => (
                       <tr key={index} className="border-b border-border last:border-0">
-                        <td className="p-4 text-foreground font-medium">{item.class}</td>
-                        <td className="p-4 text-foreground">{item.april}</td>
-                        <td className="p-4 text-foreground">{item.august}</td>
-                        <td className="p-4 text-foreground">{item.december}</td>
-                        <td className="p-4 text-foreground font-bold">{item.total}</td>
+                        <td className="p-3 md:p-4 text-foreground font-medium">{item.class}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.april}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.august}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.december}</td>
+                        <td className="p-3 md:p-4 text-foreground font-bold">{item.total}</td>
                       </tr>
                     ))}
                   </tbody>
