@@ -110,11 +110,11 @@ const Fees = () => {
                   <tbody>
                     {installmentPlan.map((item, index) => (
                       <tr key={index} className="border-b border-border last:border-0">
-                        <td className="p-4 text-foreground font-medium">{item.class}</td>
-                        <td className="p-4 text-foreground">{item.april}</td>
-                        <td className="p-4 text-foreground">{item.august}</td>
-                        <td className="p-4 text-foreground">{item.december}</td>
-                        <td className="p-4 text-foreground font-bold">{item.total}</td>
+                        <td className="p-3 md:p-4 text-foreground font-medium">{item.class}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.april}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.august}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.december}</td>
+                        <td className="p-3 md:p-4 text-foreground font-bold">{item.total}</td>
                       </tr>
                     ))}
                   </tbody>
