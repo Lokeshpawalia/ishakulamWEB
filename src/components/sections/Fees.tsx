@@ -8,8 +8,8 @@ const feeStructure = [
 ];
 
 const installmentPlan = [
-  { class: "Class V – VII", april: "₹50,000", august: "₹50,000", december: "₹50,000", total: "₹1,50,000" },
-  { class: "Class VIII – IX", april: "₹53,333", august: "₹53,333", december: "₹53,333", total: "₹1,60,000" },
+  { class: "V – VII", april: "₹50,000", august: "₹50,000", december: "₹50,000", total: "₹1,50,000" },
+  { class: "VIII – IX", april: "₹53,333", august: "₹53,333", december: "₹53,333", total: "₹1,60,000" },
 ];
 
 const paymentMethods = [
