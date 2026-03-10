@@ -97,14 +97,14 @@ const Fees = () => {
               </div>
               
               <div className="overflow-x-auto">
-                <table className="w-full">
+                <table className="w-full text-sm md:text-base">
                   <thead className="bg-muted">
                     <tr>
-                      <th className="text-left p-4 font-semibold text-foreground">Class</th>
-                      <th className="text-left p-4 font-semibold text-foreground">April</th>
-                      <th className="text-left p-4 font-semibold text-foreground">August</th>
-                      <th className="text-left p-4 font-semibold text-foreground">December</th>
-                      <th className="text-left p-4 font-semibold text-foreground">Total/Year</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Class</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Apr</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Aug</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Dec</th>
+                      <th className="text-left p-3 md:p-4 font-semibold text-foreground">Total</th>
                     </tr>
                   </thead>
                   <tbody>
