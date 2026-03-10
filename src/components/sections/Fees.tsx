@@ -71,10 +71,10 @@ const Fees = () => {
                   <tbody>
                     {feeStructure.map((item, index) => (
                       <tr key={index} className="border-b border-border last:border-0">
-                        <td className="p-4 text-foreground font-medium">{item.class}</td>
-                        <td className="p-4 text-foreground">{item.tuition}</td>
-                        <td className="p-4 text-foreground">{item.hostel}</td>
-                        <td className="p-4 text-foreground font-bold">{item.total}</td>
+                        <td className="p-3 md:p-4 text-foreground font-medium">{item.class}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.tuition}</td>
+                        <td className="p-3 md:p-4 text-foreground">{item.hostel}</td>
+                        <td className="p-3 md:p-4 text-foreground font-bold">{item.total}</td>
                       </tr>
                     ))}
                   </tbody>
