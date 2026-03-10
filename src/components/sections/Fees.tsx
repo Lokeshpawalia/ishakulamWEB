@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { CreditCard, Building, Smartphone, FileText, CheckCircle } from "lucide-react";
 
 const feeStructure = [
-  { class: "Class V – VII", tuition: "₹60,000", hostel: "₹80,000", total: "₹1,40,000" },
-  { class: "Class VIII – IX", tuition: "₹70,000", hostel: "₹80,000", total: "₹1,50,000" },
+  { class: "V – VII", tuition: "₹60,000", hostel: "₹80,000", total: "₹1,40,000" },
+  { class: "VIII – IX", tuition: "₹70,000", hostel: "₹80,000", total: "₹1,50,000" },
 ];
 
 const installmentPlan = [
