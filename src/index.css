@@ -173,6 +173,14 @@
     animation: scaleIn 0.5s ease-out forwards;
   }
 
+  .animate-mantra-scroll {
+    animation: mantraScroll 6s linear infinite;
+  }
+
+  .animate-blink-admission {
+    animation: blinkAdmission 1.2s ease-in-out infinite;
+  }
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -198,6 +206,16 @@
       opacity: 1;
       transform: scale(1);
     }
+  }
+
+  @keyframes mantraScroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-112px); }
+  }
+
+  @keyframes blinkAdmission {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
   }
 }
 
