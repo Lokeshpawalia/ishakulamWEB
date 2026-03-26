@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
@@ -14,6 +15,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      {/* Blinking Admissions Open Banner */}
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-destructive text-destructive-foreground text-center py-2 animate-blink-admission">
+        <Link to="/admissions" className="text-sm md:text-base font-bold tracking-wide hover:underline">
+          🎓 ADMISSIONS OPEN — Apply Now!
+        </Link>
+      </div>
       <main>
         <Hero />
         <About />
