@@ -217,6 +217,10 @@
     100% { transform: translateX(-50%); }
   }
 
+  .animate-mantra-sideways {
+    animation: mantraSideways 18s linear infinite;
+  }
+
   @keyframes blinkAdmission {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.2; }
