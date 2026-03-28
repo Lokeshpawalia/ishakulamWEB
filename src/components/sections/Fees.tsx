@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { CreditCard, Building, Smartphone, FileText, CheckCircle } from "lucide-react";
 
 const feeStructure = [
-  { class: "V – VII", tuition: "₹60,000", hostel: "₹80,000", total: "₹1,40,000" },
-  { class: "VIII – IX", tuition: "₹70,000", hostel: "₹80,000", total: "₹1,50,000" },
+  { class: "IV – VII", tuition: "₹30,000", hostel: "₹80,000", total: "₹1,10,000" },
+  { class: "VIII – IX", tuition: "₹40,000", hostel: "₹80,000", total: "₹1,20,000" },
 ];
 
 const installmentPlan = [
-  { class: "V – VII", april: "₹50,000", august: "₹50,000", december: "₹50,000", total: "₹1,50,000" },
-  { class: "VIII – IX", april: "₹53,333", august: "₹53,333", december: "₹53,333", total: "₹1,60,000" },
+  { class: "IV – VII", april: "₹40,000", august: "₹40,000", december: "₹40,000", total: "₹1,20,000" },
+  { class: "VIII – IX", april: "₹43,333", august: "₹43,333", december: "₹43,334", total: "₹1,30,000" },
 ];
 
 const paymentMethods = [
@@ -83,7 +83,7 @@ const Fees = () => {
 
               <div className="p-6 bg-muted/50">
                 <p className="text-sm text-muted-foreground">
-                  * Admission Fee (One-time): ₹10,000 (Non-refundable)
+                  * Admission Fee (One-time): ₹5,000 (Non-refundable)
                 </p>
               </div>
             </div>
@@ -119,6 +119,12 @@ const Fees = () => {
                     ))}
                   </tbody>
                 </table>
+              </div>
+
+              <div className="p-6 bg-muted/50">
+                <p className="text-sm text-muted-foreground">
+                  * Hostel fee (₹80,000) is included in the installment plan
+                </p>
               </div>
             </div>
           </div>
