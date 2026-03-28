@@ -26,8 +26,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative container mx-auto px-4 py-32 text-center">
         <div className="max-w-4xl mx-auto animate-slide-up">
-          <div className="inline-block px-6 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6 border border-primary-foreground/20 overflow-hidden max-w-md w-full relative">
-            <div className="animate-mantra-sideways whitespace-nowrap">
+          <div className="inline-block px-6 py-3 rounded-full bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6 border border-primary-foreground/20 overflow-hidden max-w-lg w-full relative">
+            <div className="flex w-max animate-mantra-sideways whitespace-nowrap">
               <span className="inline-block mx-4">ॐ भूर्भुवः स्वः</span>
               <span className="inline-block mx-4">तत्स॑वि॒तुर्वरे॑ण्यं॒</span>
               <span className="inline-block mx-4">भर्गो॑ दे॒वस्य॑ धीमहि।</span>

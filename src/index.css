@@ -105,6 +105,10 @@
     @apply border-border;
   }
 
+  html, body, #root {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
@@ -173,9 +177,7 @@
     animation: scaleIn 0.5s ease-out forwards;
   }
 
-  .animate-mantra-sideways {
-    animation: mantraSideways 15s linear infinite;
-  }
+
 
   .animate-blink-admission {
     animation: blinkAdmission 1.2s ease-in-out infinite;
@@ -211,6 +213,10 @@
   @keyframes mantraSideways {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+  }
+
+  .animate-mantra-sideways {
+    animation: mantraSideways 18s linear infinite;
   }
 
   @keyframes blinkAdmission {
