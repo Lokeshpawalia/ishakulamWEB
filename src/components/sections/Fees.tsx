@@ -83,7 +83,7 @@ const Fees = () => {
 
               <div className="p-6 bg-muted/50">
                 <p className="text-sm text-muted-foreground">
-                  * Admission Fee (One-time): ₹10,000 (Non-refundable)
+                  * Admission Fee (One-time): ₹5,000 (Non-refundable)
                 </p>
               </div>
             </div>
