@@ -177,9 +177,7 @@
     animation: scaleIn 0.5s ease-out forwards;
   }
 
-  .animate-mantra-sideways {
-    animation: mantraSideways 15s linear infinite;
-  }
+
 
   .animate-blink-admission {
     animation: blinkAdmission 1.2s ease-in-out infinite;
