@@ -120,6 +120,12 @@ const Fees = () => {
                   </tbody>
                 </table>
               </div>
+
+              <div className="p-6 bg-muted/50">
+                <p className="text-sm text-muted-foreground">
+                  * Hostel fee (₹80,000) is included in the installment plan
+                </p>
+              </div>
             </div>
           </div>
 
